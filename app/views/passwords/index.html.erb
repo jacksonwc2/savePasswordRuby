@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Icone</th>
+      <th>Descrição</th>
+      <th>Login</th>
+      <th>Senha</th>
+      <th colspan="3"><center> Ações </center></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passwords.each do |password| %>
+    <tr>
+      <td>
+        <center>
+          <%= image_tag password.imagem_url, width: '25px' if password.imagem_url.present?  %>
+        </center>
+      </td>
+      <td><%= password.descricao %></td>
+      <td><%= password.login %></td>
+      <td><%= password.senha %></td>
+      <td><%= link_to 'Abrir', password %></td>
+      <td><%= link_to 'Editar', edit_password_path(password) %></td>
+      <td><%= link_to 'Deletar', password, method: :delete, data: { confirm: 'Tem certeza que deseja remover?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

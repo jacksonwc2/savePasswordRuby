@@ -1,0 +1,37 @@
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle; border: none; }
+th { border-bottom: 1px solid #DDD; }
+
+.logo {
+    color: #ececec !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo span {
+    font-size: 24px;
+    color: #fff;
+}
+
+.direita, .direita i {
+    color: #fff !important;
+}
+
+.sub-titulo {
+    background: #efefef;
+    padding: 10px 0px;
+    color: #6b6b6b;
+}
+
+.sub-titulo span {
+    font-weight: bold;
+}
+
+.novo {
+    float: right;
+    margin-top: -4px;
+}
+
+h3 {
+    margin-top: 30px;
+}
